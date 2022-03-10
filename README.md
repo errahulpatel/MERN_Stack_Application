@@ -1,6 +1,13 @@
 # MERN Stack Application
 Build and deploy fullstack web apps with NodeJS, React, Redux, Express, and MongoDB.
 
+Its a Feedback Collection system.
+
+
+Node v16.13.1
+npm@8.5.3 : npm install -g npm@8.5.3
+
+
 ### Here's what we'll learn:
 
     Learn the architectural considerations of building a full stack app
