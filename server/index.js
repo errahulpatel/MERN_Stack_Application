@@ -31,9 +31,9 @@ app.get("/auth/google/callback", passport.authenticate("google"), async (req, re
   
 });
 
-// app.get("/", (req, res) => {
-//   res.send({ bye: "buddy" });
-// });
+app.get("/", (req, res) => {
+  res.send({ bye: "buddy" });
+});
 
 const PORT = process.env.PORT || 5000;
 
