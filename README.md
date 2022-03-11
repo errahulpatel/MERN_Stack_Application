@@ -33,3 +33,31 @@ npm@8.5.3 : npm install -g npm@8.5.3
 Full Code : https://github.com/StephenGrider/FullstackReactCode
 
 Diff checker : https://www.diffchecker.com
+
+## heroku: Deploy using Heroku Git
+https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli
+
+Install the Heroku CLI
+
+Download and install the Heroku CLI.
+
+If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+
+$ heroku login
+
+Clone the repository
+
+Use Git to clone pacific-reaches-60610's source code to your local machine.
+
+$ heroku git:clone -a pacific-reaches-60610 
+$ cd pacific-reaches-60610
+
+Deploy your changes
+
+Make some changes to the code you just cloned and deploy them to Heroku using Git.
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+
+URL : https://pacific-reaches-60610.herokuapp.com/
