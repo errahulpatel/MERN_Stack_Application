@@ -1,0 +1,1 @@
+export const FECTCH_USER = 'fetch_user';
