@@ -37,8 +37,8 @@ class Header extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { auth : (state.auth == null ? false : state.auth.data || false) };
+function mapStateToProps({auth}) {
+  return { auth  };
 }
 
 export default connect(mapStateToProps)(Header);
