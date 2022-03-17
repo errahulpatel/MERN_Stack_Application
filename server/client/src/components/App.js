@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { connect } from 'react-redux';
-import * as actions from '../actions';
+import { connect } from "react-redux";
+import * as actions from "../actions";
 
 import Header from "./Header";
 import Landing from "./Landing";
+import Dashboard from "./Dashboard";
 
-const Dashboard = () => <h2>Dashboard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
             <Header />
             <Routes>
               <Route exact path="/" element={<Landing />} />
-              <Route exact path="/surveys" component={Dashboard} />
+              <Route exact path="/surveys" element={<Dashboard />} />
               <Route path="/surveys/new" component={SurveyNew} />
             </Routes>
           </div>
